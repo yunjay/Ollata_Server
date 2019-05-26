@@ -1,0 +1,14 @@
+# Prisma API HTTP endpoint
+#endpoint: ''
+endpoint: https://us1.prisma.sh/steve12146/Ollata/dev
+
+
+# Data model file name
+datamodel: datamodel.graphql
+
+# API access secret
+secret: testsecret
+
+hooks:
+  post-deploy:
+    - graphql get-schema --project database

@@ -1,0 +1,15 @@
+type Scooter {
+  id: ID! @id @unique
+  name: String!
+  info: String!
+  lat: Float!
+  lng: Float!
+  time: String!
+}
+
+type User{
+  id: ID! @id @unique
+  userName: String!
+  coins: Int
+  purchases: Int
+}

@@ -1,0 +1,24 @@
+type Query {
+  getAllScooters: [Scooter!]!
+  scooterName: String!
+}
+
+type Mutation {
+    updateScooter(lat:Float!,lng:Float!): Scooter!
+}
+
+type Scooter {
+  id: ID! @id @unique
+  info: String!
+  name: String!
+  lat: Float!
+  lng: Float!
+  time: String!
+}
+
+type User{
+  id: ID! @id @unique
+  userName: String!
+  coins: Int
+  purchases: Int
+}
